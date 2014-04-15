@@ -1,2 +1,1 @@
-#= require_tree ./vendor
-#= require_tree ./lib
+#= require vendor/jquery-1.11.0.min
