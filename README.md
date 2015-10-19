@@ -1,3 +1,13 @@
-#koh-template for Middleman#
+#koh-template v1.0.0
+###for [Middleman](//middlemanapp.com)
 
-Based off of: [middleman-hamlsasscoffee](https://github.com/pixelsonly/middleman-hamlsasscoffee)
+##Installation
+If you don't have a Middleman template directory:
+`mkdir ~/.middleman`
+
+```
+cd ~/.middleman
+git clone git@github.com:kohactive/koh-template.git
+cd path/to/projects
+middleman init -T koh-template <project_name>
+```
