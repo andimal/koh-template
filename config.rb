@@ -47,18 +47,21 @@
 #   end
 # end
 
-set :css_dir, 'assets/stylesheets'
+sprockets.append_path File.join "#{root}", 'node_modules'
+sprockets.append_path File.join "#{root}", 'bower_components'
 
-set :js_dir, 'assets/javascripts'
+set :css_dir, 'assets/styles'
+
+set :js_dir, 'assets/scripts'
 
 set :images_dir, 'assets/images'
 
 activate :livereload
+activate :autoprefixer
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
-  ignore 'images/*.psd'
-
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -69,7 +72,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
