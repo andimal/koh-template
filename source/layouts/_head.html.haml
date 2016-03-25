@@ -9,14 +9,9 @@
 
   %meta{ name: "google-site-verification",    content: ""}
 
-  %link{rel: 'icon',              href: image_path('favicon.ico'), type: 'image/x-icon'}
-  %link{rel: 'shortcut icon',     href: image_path('favicon.ico'), type: 'image/x-icon'}
-  %link{rel: 'apple-touch-icon',  href: image_path('favicon.ico'), type: 'image/x-icon'}
-
-  = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"
+  %link{rel: "icon",              href: image_path("favicon.ico"), type: "image/x-icon"}
+  %link{rel: "shortcut icon",     href: image_path("favicon.ico"), type: "image/x-icon"}
+  %link{rel: "apple-touch-icon",  href: image_path("favicon.ico"), type: "image/x-icon"}
 
   -# Stylesheets
-  = stylesheet_link_tag 'application'
-  /[if lte IE 8]
-    = stylesheet_link_tag "ie"
-    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr.js"
+  = stylesheet_link_tag "main"

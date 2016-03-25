@@ -1,0 +1,25 @@
+{
+  "name": "koh-template",
+  "authors": [
+    "kohactive <info@kohactive.com>"
+  ],
+  "version": "1.0.0",
+  "description": "The base Middleman template used at kohactive",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "kohactive.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "manhattan": "^0.5.0",
+    "normalize-scss": "^3.0.3",
+    "jquery": "^2.2.2"
+  }
+}
